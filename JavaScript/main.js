@@ -26,7 +26,10 @@ const execute4 = () => {
 
 // Parsear a número
 const execute5 = () => {
-  let numberOne = Number("1");
+  let numberOne = Number.parseInt("1");
+  numberOne = Number("1");
+  numberOne = parseInt("1");
+  console.log(numberOne);
 };
 
 // Legibilidad de un gran número
@@ -100,6 +103,25 @@ const execute14 = () => {
   console.log(Number.isNaN(a));
 };
 
+// Aproximar al número entero inferior más cercano
+const execute15 = () => {
+  const x = ~~(Math.random() * 50);
+  console.log(x);
+};
+
+// Número de caracteres de un String
+const execute16 = () => {
+  console.log("Longitud".length);
+};
+
+// Diferenciar el uso de preincremento y el postincremento
+const execute17 = () => {
+  let a = 0;
+  while (a < 5) console.log(a, a++, a);
+  a = 0;
+  while (a < 5) console.log(a, ++a, a);
+};
+
 // -----------------------------------------------------------------------------------------------------------
 
-execute14()
+execute17()
