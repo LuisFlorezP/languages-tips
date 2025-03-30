@@ -1,4 +1,4 @@
-(() => {
+(() => {  
     // Tipear a un tipo de dato
     let udf: undefined = undefined;
     let nl: null = null;
